@@ -58,6 +58,24 @@ You will need the following Python packages:
 pip install numpy matplotlib networkx scipy qiskit qiskit-aer
 ```
 
+## 📊 Example Run & Visual Results
+
+To demonstrate the capabilities of the quantum-classical optimizer, here is an example of a program execution. 
+
+**Terminal Input:**
+* Desired number of settlements: `4`
+* Maximum number of roads: `14`
+
+### 1. Optimal Settlement Placement (QAOA Output)
+The QAOA algorithm successfully identified the 4 best starting positions (Nodes 8, 11, 13, and 23) by balancing resource diversity (wheat, sheep, wood) and prioritizing high-probability dice rolls.
+
+![Optimal Settlement Placement](settlement_placement.png)
+
+### 2. Longest Road (Quantum Walk Output)
+Starting from the optimized settlements, the algorithm calculated the longest simple path. As seen below, it successfully generated a 14-edge continuous road from Node 8 to Node 18 without any branching, perfectly respecting the game's constraints.
+
+![Longest Road Simulation](longest_road_optimized.png)
+
 ### Execution
 Run the main file directly from your terminal:
 
